@@ -45,7 +45,7 @@ export const messages: Message[] = [
     starArt: starPortraits.nanaNani,
     art: assets.nanaNani,
     body: [
-      "We are excited for your arrival. Sushegaat ani safe yo. We are waiting to play with you. Nani is waiting to feed you yummy fish and Nana is waiting for you to sleep with him on his tummy like your mumma used to.",
+      "We are excited for your arrival. Sushegaat ani safe yo. We are waiting to play with you. Nani is waiting to feed you yummy fish and Nana is waiting for you to sleep with him on his tummy like your Mummy used to.",
       "To Nikee and Mrunal, we know you will make the best parents and Nani & Nana are ready to spoil your little one 😉",
     ],
     signoffLead: "Love & blessings,",
@@ -58,10 +58,10 @@ export const messages: Message[] = [
     starArt: starPortraits.dadaDadi,
     art: assets.dadaDadi,
     body: [
-      "To our little star, ❤️",
-      "We can't wait to meet you!",
-      "Dadi and Dada is waiting to take you roaming around Mumbai, from Marine Drive to all our favorite places!",
-      "To Nikee and Mrunal, you're going to be amazing parents.",
+      "To our little cutest grandbaby, ❤️",
+      "Grow strong and healthy!",
+      "Dada and Dadi are eager to Welcome and have you in our arms..😘❤️🙌.",
+      "To Mrunal and Nikee  be ready for the new adventure of life..Good luck 😘",
     ],
     signoffLead: "Love & blessings,",
     signName: "Dada & Dadi",
@@ -81,7 +81,7 @@ export const messages: Message[] = [
   },
 ];
 
-export type Parent = "Mumma" | "Daddy";
+export type Parent = "Mummy" | "Daddy";
 
 export type Prediction = {
   text: string;
@@ -97,10 +97,10 @@ export const predictions = {
   questions: [
     {
       text: "Who is more likely to sleep in until noon?",
-      answer: "Mumma",
+      answer: "Mummy",
       reaction: {
-        Mumma: "Beauty sleep is important. 😴",
-        Daddy: "Nice try, Daddy. Mumma is winning this one. 😂",
+        Mummy: "Beauty sleep is important. 😴",
+        Daddy: "Nice try, Daddy. Mummy is winning this one. 😂",
       },
     },
     {
@@ -108,39 +108,31 @@ export const predictions = {
       answer: "Daddy",
       reaction: {
         Daddy: "Caught in 4K, Daddy. 😂",
-        Mumma: "Mumma said she won't spoil me... she already has a secret shopping cart. 🛍️",
+        Mummy: "Mummy said she won't spoil me... she already has a secret shopping cart. 🛍️",
       },
     },
     {
       text: "Who will wake up first at 3 AM?",
-      answer: "Mumma",
+      answer: "Daddy",
       reaction: {
-        Mumma: "Mumma's already awake. Daddy is still negotiating with his pillow. 😴",
-        Daddy: "Daddy? At 3 AM? That's a plot twist. 😂",
+        Mummy: "Mommy can sleep… Daddy’s on night duty! 😂❤️",
+        Daddy: "The moment I make the tiniest little sound, Daddy will be wide awake!",
       },
     },
     {
       text: "Who will be the stricter parent?",
-      answer: "Mumma",
+      answer: "Mummy",
       reaction: {
-        Mumma: "Mumma says no... but her hugs say yes. ❤️",
+        Mummy: "Mummy says no... but her hugs say yes. ❤️",
         Daddy: "Daddy thinks he's strict. That's adorable. 😂",
       },
     },
     {
       text: "Who will take the most baby pictures?",
-      answer: "Mumma",
+      answer: "Mummy",
       reaction: {
-        Mumma: "My personal photographer is ready. Say cheese, baby! 📸",
+        Mummy: "My personal photographer is ready. Say cheese, baby! 📸",
         Daddy: "Daddy, you have 14,827 pictures to catch up on. 😂",
-      },
-    },
-    {
-      text: "Who will teach the first naughty trick?",
-      answer: "Daddy",
-      reaction: {
-        Daddy: "My little partner in crime! 😈",
-        Mumma: "Mumma is already preparing the rulebook. 😂",
       },
     },
     {
@@ -148,7 +140,7 @@ export const predictions = {
       answer: "Daddy",
       reaction: {
         Daddy: "Daddy has officially melted. Someone get tissues. 🥹",
-        Mumma: "Mumma says she's fine... her eyes say otherwise. ❤️",
+        Mummy: "Mummy says she's fine... her eyes say otherwise. ❤️",
       },
     },
     {
@@ -156,7 +148,7 @@ export const predictions = {
       answer: "Daddy",
       reaction: {
         Daddy: "Baby's asleep. Daddy's asleep. Everybody wins. 😴",
-        Mumma: "Mumma is still on duty. Send coffee. ☕",
+        Mummy: "Mummy is still on duty. Send coffee. ☕",
       },
     },
   ] satisfies Prediction[],
@@ -169,7 +161,7 @@ export const interview = {
   cards: [
     {
       src: interviewCards[0],
-      alt: "What do you want Mom & Dad to know? “Thank you for keeping me warm, Mumma & Dad! I want to eat chocolates and fish with Mumma while watching SRK movies, and have chai with Dad while screaming at the TV during United matches!”",
+      alt: "What do you want Mom & Dad to know? “Thank you for keeping me warm, Mummy & Dad! I want to eat chocolates and fish with Mummy while watching SRK movies, and have chai with Dad while screaming at the TV during United matches!”",
     },
     {
       src: interviewCards[1],

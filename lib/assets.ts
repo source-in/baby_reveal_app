@@ -67,8 +67,8 @@ export const assets: Record<"nanaNani" | "dadaDadi" | "mamzzNini", ImageSrc> = {
   mamzzNini: messageMamzzNini,
 };
 
-// Mumma and Daddy strike a different pose for each prediction question.
+// Mummy and Daddy strike a different pose for each prediction question.
 export const parentPoses = {
-  Mumma: [momPose1, momPose2, momPose3, momPose4],
+  Mummy: [momPose1, momPose2, momPose3, momPose4],
   Daddy: [dadPose1, dadPose2, dadPose3, dadPose4],
 };

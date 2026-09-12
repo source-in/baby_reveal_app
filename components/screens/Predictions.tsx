@@ -88,7 +88,7 @@ export function Predictions() {
   const q = questions[i];
   const choice = answers[i] ?? null;
   const isLast = i === questions.length - 1;
-  const pose = i % parentPoses.Mumma.length;
+  const pose = i % parentPoses.Mummy.length;
 
   const pick = (p: Parent) => {
     setAnswers((a) => ({ ...a, [i]: p }));
@@ -143,14 +143,14 @@ export function Predictions() {
             <p className="mx-auto max-w-60 text-center text-[1.1rem] leading-snug">{q.text}</p>
             <div className="mt-5 grid grid-cols-2 gap-4">
               <ChoiceTile
-                label="Mumma"
-                photo={parentPoses.Mumma[pose]}
+                label="Mummy"
+                photo={parentPoses.Mummy[pose]}
                 tone="pink"
-                selected={choice === "Mumma"}
-                isAnswer={q.answer === "Mumma"}
+                selected={choice === "Mummy"}
+                isAnswer={q.answer === "Mummy"}
                 revealed={choice !== null}
                 burst={taps}
-                onClick={() => pick("Mumma")}
+                onClick={() => pick("Mummy")}
               />
               <ChoiceTile
                 label="Daddy"
