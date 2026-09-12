@@ -59,11 +59,11 @@ export const messages: Message[] = [
     art: assets.dadaDadi,
     body: [
       "To our little star, ❤️",
-      "We can't wait to meet you, cuddle you, and spoil you with lots of love!",
-      "Dadi is ready with yummy dhokla, fafda, thepla, and all your favorite Gujarati delicacies. 😋 Dada is waiting to take you roaming around Mumbai, from Marine Drive to all our favorite places!",
-      "To Nikee and Mrunal, you're going to be amazing parents. We're ready to spoil this little one silly! 😉",
+      "We can't wait to meet you!",
+      "Dadi and Dada is waiting to take you roaming around Mumbai, from Marine Drive to all our favorite places!",
+      "To Nikee and Mrunal, you're going to be amazing parents.",
     ],
-    signoffLead: "Lots of love & blessings,",
+    signoffLead: "Love & blessings,",
     signName: "Dada & Dadi",
   },
   {
