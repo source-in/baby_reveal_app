@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Our Little Star
 
-## Getting Started
+A mobile-first, story-style gender reveal web app for Mom & Dad.
 
-First, run the development server:
+**Stack:** Next.js (App Router) · TypeScript · Tailwind CSS v4 · [Motion](https://motion.dev) for animations.
+
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dev shortcuts: `?screen=3` jumps straight to a screen (0-based), `?message=0` opens a star message.
+Arrow keys and horizontal swipes also move between screens.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where things live
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Path | What |
+| --- | --- |
+| `lib/content.ts` | **All copy**: letter, star messages, the 8 prediction questions and their answers, survival kit |
+| `lib/assets.ts` | Every image the app uses: screen backgrounds, star portraits, message portraits, interview cards and icons (the Mom / Dad quiz tiles are still emoji) |
+| `public/images/` | The painted artwork. `cutouts/` holds the Survival Kit icons with their background removed |
+| `scripts/cutout-icons.mjs` | Regenerates the Survival Kit icons in `cutouts/` — run after changing one |
+| `scripts/cutout-stars.mjs` | Cuts the painted star portraits (`star_3`, `star_4`) out of their backgrounds into `cutouts/` — run after changing one |
+| `components/screens/index.ts` | Screen order, background image, theme, and whether each shows dots / next arrow |
+| `components/screens/*.tsx` | One file per screen |
+| `components/MessageModal.tsx` | The "A message from…" card opened from the stars screen |
+| `components/Story.tsx` | Navigation state, page transitions, background preloading |
+| `components/motion.tsx` | Reusable animations: `FadeUp`, `Float`, `Pulse`, `Glow`, `HeartBurst`, `FloatingHearts` |
+| `components/art.tsx` | SVG bits: stars, twinkles, shooting stars, hearts, envelopes |
+| `components/ui.tsx` | Screen shell, painted background (slow zoom), titles, buttons, page dots |
+| `app/globals.css` | Colour palette, fonts, twinkle / shooting-star keyframes |
 
-## Learn More
+Animations respect the device's "reduce motion" setting.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push to GitHub and import the repo on [Vercel](https://vercel.com/new) — no configuration needed.
